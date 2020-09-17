@@ -19,9 +19,24 @@
 
     <!-- google font -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="~/css/asc.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f14917f0910d731df0126057fcf9e973"></script>
+    <script>
+        var container = document.getElementById('map1');
+        var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
+
 </head>
 
 
@@ -43,7 +58,7 @@
                 <nav class="classy-navbar light justify-content-between" id="dreamNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand light" href="#"><img src="/templetes/asc/img/core-img-asc/logo.png" alt="logo"></a>
+                    <a class="nav-brand light" href="Home"><img src="/templetes/asc/img/core-img-asc/logo.png" alt="logo"></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler demo">
@@ -62,18 +77,20 @@
                         <div class="classynav">
                             <ul id="nav">
                                 <li>
-                                    <a href="#page1">ABOUT</a>
+                                    <a href="#page1" class="font-nav">ABOUT</a>
 
-                                </li>
+                                </li>    
                                 <li>
-                                    <a href="#page2">SKILLS</a>
-
-                                </li>
-                                <li>
-                                    <a href="#page3">SERVICES</a>
+                                    <a href="#page2" class="font-nav">SERVICES</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#page2_1" class="font-nav-sub">RPA</a></li>
+                                        <li><a href="#page2_2" class="font-nav-sub">CMS</a></li>
+                                        <li><a href="#page2_3" class="font-nav-sub">CHAT BOT</a></li>
+                                        <li><a href="#page2_4" class="font-nav-sub">SMART FACTORY</a></li>
+                                    </ul>
                                   
                                 </li>
-                                <li><a href="#page4">CONTACT</a></li>
+                                <li><a href="#page3" class="font-nav">CONTACT</a></li>
                             </ul>
 
                         </div>

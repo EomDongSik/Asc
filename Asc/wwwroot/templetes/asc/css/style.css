@@ -1183,6 +1183,7 @@ ol {
 /* ##### 3.0 Wellcome Area CSS ##### */
 .hero-section{
     position: relative;
+    
     min-height: 700px;
     background: url('../img/bg-img/header2.jpg') no-repeat bottom center;
     background-size: cover;
@@ -1297,7 +1298,7 @@ ol {
 .hero-section.fullwidth-header{
     padding-top: 100px;
     padding-bottom: 405px;
-    background-image: url(../img/bg-img/header-bg3.png);
+    background-image: url(../img/core-img-asc/ai-bg.png);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
