@@ -39,6 +39,12 @@
     font-weight: 700;
 }
 
+.font-sub-title2-gothic {
+    font-family: 'Nanum gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .font-content-gothic {
     font-family: 'Nanum gothic', sans-serif;
     font-size:17px;
@@ -75,6 +81,15 @@ strong {
     height: 550px;
     width: 1100px;
     padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.background-box {
+    
+    height: 500px;
+    width: 1200px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -180,6 +195,43 @@ strong {
 
 @media (max-width: 991px) {
     .hero-section.full-width-main2 {
+        padding-bottom: 0px;
+        background-image: url(../img/bg-img/header-bg3-min.png);
+        background-position: top center;
+        background-size: cover;
+        padding-top: 0
+    }
+
+    .special-pb {
+        padding-bottom: 100px
+    }
+
+    .welcome-content.spe {
+        margin-top: 0 !important
+    }
+}
+
+.hero-section.full-width-main3 {
+    padding-top: 100px;
+    padding-bottom: 405px;
+    background-color:black;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .hero-section.full-width-main3 .special-head.dark {
+        padding-left: 0
+    }
+
+        .hero-section.full-width-main3 .special-head.dark:before {
+            display: none;
+        }
+
+
+
+@media (max-width: 991px) {
+    .hero-section.full-width-main3 {
         padding-bottom: 0px;
         background-image: url(../img/bg-img/header-bg3-min.png);
         background-position: top center;
